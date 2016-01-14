@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.HelpIntent",
+      "slots": []
+    },
+    {
+      "intent": "ReadTopStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadNewStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadJobStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadAskStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadShowStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    }
+  ]
+}
