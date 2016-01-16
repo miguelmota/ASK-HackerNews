@@ -5,6 +5,18 @@
       "slots": []
     },
     {
+      "intent": "AMAZON.YesIntent",
+      "slots": []
+    },
+    {
+      "intent": "AMAZON.NoIntent",
+      "slots": []
+    },
+    {
+      "intent": "AMAZON.CancelIntent",
+      "slots": []
+    },
+    {
       "intent": "ReadTopStoriesIntent",
       "slots": [{
           "name": "Count",
@@ -19,7 +31,7 @@
       }]
     },
     {
-      "intent": "ReadJobStoriesIntent",
+      "intent": "ReadShowStoriesIntent",
       "slots": [{
           "name": "Count",
           "type": "AMAZON.NUMBER"
@@ -33,7 +45,28 @@
       }]
     },
     {
-      "intent": "ReadShowStoriesIntent",
+      "intent": "ReadJobStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadBestStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadActiveStoriesIntent",
+      "slots": [{
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "ReadNoobStoriesIntent",
       "slots": [{
           "name": "Count",
           "type": "AMAZON.NUMBER"

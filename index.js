@@ -2,6 +2,7 @@
 
 var AlexaSkill = require('./libs/AlexaSkill');
 var intentHandlers = require('./libs/intents');
+var i18n = require('./libs/i18n');
 
 // App ID for the skill
 var APP_ID = '';
@@ -23,7 +24,7 @@ App.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, 
 App.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
   console.log('App onLaunch requestId: ' + launchRequest.requestId + ', sessionId: ' + session.sessionId);
 
-  response.ask('What Hacker News stories would you like to hear? You can stay, "top", "newest", "jobs", "show", or "ask" stories.');
+  response.ask(i18n.greeting, i18n.greetingReprompt);
 };
 
 App.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {

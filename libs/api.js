@@ -3,15 +3,59 @@
 var _ = require('lodash');
 var request = require('request');
 var Q = require('q');
+var cheerio = require('cheerio');
 
-var baseUrl = 'https://hacker-news.firebaseio.com/v0/';
+var baseUrl = 'https://news.ycombinator.com';
+var baseApiUrl = 'https://hacker-news.firebaseio.com/v0';
+
 var apiUrls = {
-  topStories: baseUrl + 'topstories.json',
-  newStories: baseUrl + 'newstories.json',
-  jobStories: baseUrl + 'jobstories.json',
-  askStories: baseUrl + 'askstories.json',
-  showStories: baseUrl + 'showstories.json',
-  story: baseUrl + 'item/{{id}}.json'
+  topStories: baseUrl + '/',
+  newStories: baseUrl + '/newest',
+  showStories: baseUrl + '/show',
+  askStories: baseUrl + '/ask',
+  jobStories: baseUrl + '/jobs',
+  bestStories: baseUrl + '/best',
+  activeStories: baseUrl + '/active',
+  noobStories: baseUrl + '/noobstories',
+  story: baseApiUrl + '/item/{id}}.json'
+};
+
+var pendingPromises = {};
+
+var queue = {
+  inProgress: false,
+
+  queue: [],
+
+  enqueue: function(fn) {
+    this.queue.push(fn);
+
+    if (!this.inProgress) {
+      this.dequeue();
+    }
+  },
+
+  dequeue: function() {
+    if (this.inProgress) {
+      return false;
+    }
+
+    var fn = this.queue.shift();
+
+    if (typeof fn === 'function') {
+      var promise = fn();
+      if (typeof promise === 'object') {
+        this.inProgress = true;
+        return promise.then(function() {
+          this.inProgress = false;
+          this.dequeue();
+        }.bind(this)).catch(function() {
+          this.inProgress = false;
+          this.dequeue();
+        }.bind(this));
+      }
+    }
+  }
 };
 
 var http = {
@@ -22,6 +66,10 @@ var http = {
       for (var key in params) {
         url = url.replace('{{' + key + '}}', params[key]);
       }
+    }
+
+    if (typeof params.page === 'number' && params.page > 1) {
+      url += ('?p=' + params.page);
     }
 
     request({
@@ -41,6 +89,63 @@ var http = {
 };
 
 var api = {
+  /**
+   * Parsing page is faster than making a call
+   * to each individual story.
+   */
+  parsePage: function(page, type) {
+    if (page.length < 600) {
+
+    }
+    var $ = cheerio.load(page);
+
+    var $table = $('.itemlist');
+    var $rows = $table.find('.athing');
+
+    var stories = [];
+
+    $rows.each(function() {
+      var $next = $(this).next('tr');
+      var $subtext = $next.find('.subtext');
+      var $title = $(this).find('.title');
+      var $comments = $subtext.find('a').last();
+      var by = $subtext.find('a').first().text();
+      var descendants = ($comments.text().replace(/[^\d]+/, '') >>> 0);
+      var id = ($comments.attr('href').replace(/[^\d]+/, '') >>> 0);
+      var score = ($next.find('.score').text().replace(/[^\d]+/, '') >>> 0);
+      var time = $next.find('.age').text();
+      var url =  $title.find('a').attr('href');
+      var title =  $title.find('a').first().text();
+      var domain = $title.find('.sitebit').find('a').text();
+
+      if (typeof type !== 'string') {
+        type = null;
+      }
+
+      var isItemUrl = !/https?:\/\//gi.test(url) && /item\?id=/gi.test(url);
+
+      if (isItemUrl) {
+        url = baseUrl + '/' + url;
+      }
+
+      var story = {
+        by: by,
+        descendants: descendants,
+        id: id,
+        score: score,
+        time: time,
+        title: title,
+        type: type,
+        url: url,
+        domain: domain
+      };
+
+      stories.push(story);
+    });
+
+    return stories;
+  },
+
   getStory: function(id) {
     if (typeof id !== 'number') {
       return Q.reject(new TypeError('`id` must be a number.'));
@@ -60,6 +165,7 @@ var api = {
 
     var defaults = {
       count: 10,
+      page: 1,
       type: 'top'
     };
 
@@ -69,78 +175,68 @@ var api = {
       options.count = defaults.count;
     }
 
+    if (options.count < 1) {
+      options.count = 1;
+    } else if (options.count > 30) {
+      options.count = 30;
+    }
+
+    if (typeof options.page !== 'number') {
+      options.page = defaults.page;
+    }
+
+    if (options.page < 1) {
+      options.page = 1;
+    }
+
     if (typeof options.type !== 'string') {
       options.type = defaults.type;
     }
 
-    var count = options.count;
-    var stories = [];
+    var storyType = options.type + 'Stories';
+    var pendingPromiseHash = storyType + '-' + options.toString();
 
-    var checkCount = function() {
-      if (--count === 0) {
-        if (options.top) {
-          stories.sort(this.topScoreSort);
-        }
-        deferred.resolve(stories);
-      }
-    }.bind(this);
+    var pendingPromise = pendingPromises[pendingPromiseHash];
+    if (pendingPromise instanceof Object &&
+        pendingPromise.isPending()) {
+      return pendingPromise.then(function(page) {
+        pendingPromises[pendingPromiseHash] = null;
+        handleResponse(page);
+      }).catch(handleFailure);
+    }
 
-    var typeUrl = apiUrls[options.type + 'Stories'];
+    var typeUrl = apiUrls[storyType];
 
     if (typeof typeUrl !== 'string') {
       typeUrl = apiUrls.topStories;
     }
 
-    http.get(typeUrl).then(function(storyIds) {
-      if (!Array.isArray(storyIds)) {
-        throw new Error('StoryIds not returned.');
-      }
-      storyIds.slice(0, count).forEach(function(id) {
-        api.getStory(id).then(function(story) {
-          stories.push(story);
-
-          checkCount();
-        }.bind(this)).catch(function(error) {
-          console.error(error);
-          checkCount();
-        });
+    var fn = function() {
+      pendingPromises[pendingPromiseHash] = http.get(typeUrl, {
+        page: options.page
       });
-    }.bind(this)).catch(function(error) {
+
+      pendingPromises[pendingPromiseHash].then(function(page) {
+        handleResponse(page);
+      }).catch(handleFailure);
+
+      return pendingPromises[pendingPromiseHash];
+    };
+
+    queue.enqueue(fn);
+
+    var handleResponse = function(page) {
+      var stories = this.parsePage(page, options.type);
+
+      deferred.resolve(stories.slice(0, options.count));
+    }.bind(this);
+
+    var handleFailure = function(error) {
       console.error(error);
       deferred.reject(error);
-    });
+    };
 
     return deferred.promise;
-  },
-
-  getTopStories: function(options) {
-    return this.getStories(_.extend({}, options, {
-      type: 'top'
-    }));
-  },
-
-  getNewStories: function(options) {
-    return this.getStories(_.extend({}, options, {
-      type: 'new'
-    }));
-  },
-
-  getJobStories: function(options) {
-    return this.getStories(_.extend({}, options, {
-      type: 'job'
-    }));
-  },
-
-  getAskStories: function(options) {
-    return this.getStories(_.extend({}, options, {
-      type: 'ask'
-    }));
-  },
-
-  getShowStories: function(options) {
-    return this.getStories(_.extend({}, options, {
-      type: 'show'
-    }));
   },
 
   topScoreSort: function(a, b) {

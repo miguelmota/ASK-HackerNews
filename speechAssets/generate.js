@@ -3,11 +3,14 @@
 var intentUtteranceExpander = require('intent-utterance-expander');
 
 var intents = {
-  ReadTopStoriesIntent: '(|please) (read me|tell me|what\'s|what are|get|get me|fetch|fetch me) the top (|{Count}) (|stories|headlines|news)',
-  ReadNewStoriesIntent: '(|please) (read me|tell me|what\'s|what are|get|get me|fetch|fetch me) the (|latest) (|new|newest|recent|most recent) (|{Count}) (|stories|headlines|news)',
-  ReadJobStoriesIntent: '(|please) (read me|tell me|what\'s|what are|get|get me|fetch|fetch me) the (|latest) (job|jobs) (|{Count}) (|stories|headlines|news)',
-  ReadAskStoriesIntent: '(|please) (read me|tell me|what\'s|what are|get|get me|fetch|fetch me) the (|latest) (ask|ask hn|ask hacker news|questions|answer) (|{Count}) (|stories|headlines|news)',
-  ReadShowStoriesIntent: '(|please) (read me|tell me|what\'s|what are|get|get me|fetch|fetch me) the (|latest) (show|show hn|show hacker news|show and tell) (|{Count}) (|stories|headlines|news)'
+  ReadTopStoriesIntent: '(read|tell|what\'s|what are|get|fetch) top (|{Count}) (|stories|headlines|news)',
+  ReadNewStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) (|latest|new|newest|recent|most recent|current) (|{Count}) (|stories|headlines|news)',
+  ReadShowStoriesIntent: '(read|tell me|what\'s|what are|get|fetch) (|latest) (show|show hn|show hacker news|show and tell) (|{Count}) (|stories|headlines|news)',
+  ReadAskStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) (ask|ask hn|ask hacker news|questions|answer) (|{Count}) (|stories|headlines|news)',
+  ReadJobStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) (job|jobs|career|careers|work) (|{Count}) (|stories|headlines|news)',
+  ReadBestStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) (best|bestest) (|{Count}) (|stories|headlines|news)',
+  ReadActiveStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) (active|most active) (|{Count}) (|stories|headlines|news)',
+  ReadNoobStoriesIntent: '(read|tell|what\'s|what are|get|fetch) (|latest) noob (|{Count}) (|stories|headlines|news)'
 };
 
 var utterancesCollection = '';

@@ -9,6 +9,8 @@
   "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
   "license": "MIT",
   "dependencies": {
+    "capitalize": "^1.0.0",
+    "cheerio": "^0.19.0",
     "concat-stream": "^1.5.1",
     "intent-utterance-expander": "0.0.4",
     "lodash": "^3.10.1",
