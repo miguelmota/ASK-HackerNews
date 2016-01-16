@@ -1,21 +1,19 @@
-# Alexa Skills Kit Hacker News App
+# ASK Hacker News App
 
 <img src="./designAssets/icon108x108.png" width="100">
 
-> Read the top [Hacker News](https://news.ycombinator.com/) headlines.
+> An [Alexa Skills Kit](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit) app to Read the top [Hacker News](https://news.ycombinator.com/) headlines.
 
-# Example
+# Commands
 
-```
-> Alexa, open hacker news.
-```
+Things you try asking.
 
 ## Open app
 
 ```
-Alexa, open hacker news.
-Alexa, load hacker news.
-Alexa, start hacker news.
+Alexa, open Hacker News.
+Alexa, load Hacker News.
+Alexa, start Hacker News.
 ```
 
 ## Top stories
@@ -52,10 +50,13 @@ Sample response
 (response) Would you like to hear more stories?
 ```
 
+The stories will also appear in the Alexa app as a card.
+
 ## Help
 
 ```
 Alexa, ask Hacker News for help.
+(respnse) You can ask me for "top", "new", "show", "ask", "job", "best", "active", or "noob" Hacker News stories. See the Help card in the Alexa app for additional information.
 ```
 ## Quit
 
