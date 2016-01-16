@@ -2,7 +2,7 @@
 
 <img src="./designAssets/icon108x108.png" width="100">
 
-> An [Alexa Skills Kit](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit) app to Read the top [Hacker News](https://news.ycombinator.com/) headlines.
+> An [Alexa Skills Kit](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit) app to read the top [Hacker News](https://news.ycombinator.com/) headlines.
 
 # Commands
 
