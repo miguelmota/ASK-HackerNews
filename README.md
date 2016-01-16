@@ -6,7 +6,7 @@
 
 # Commands
 
-Things you try asking.
+Things you can try asking.
 
 ## Open app
 
