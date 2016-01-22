@@ -17,6 +17,12 @@ AMAZON.CancelIntent exit
 AMAZON.CancelIntent quit
 AMAZON.CancelIntent never mind
 AMAZON.CancelIntent shut up
+AMAZON.CancelIntent stop
+AMAZON.CancelIntent please stop
+AMAZON.CancelIntent leave
+AMAZON.CancelIntent good bye
+AMAZON.CancelIntent cancel
+AMAZON.CancelIntent enough
 
 ReadTopStoriesIntent read top {Count} stories
 ReadTopStoriesIntent read top {Count} headlines
@@ -494,12 +500,12 @@ ReadShowStoriesIntent read latest show {Count} news
 ReadShowStoriesIntent read latest show stories
 ReadShowStoriesIntent read latest show headlines
 ReadShowStoriesIntent read latest show news
-ReadShowStoriesIntent read latest show hn {Count} stories
-ReadShowStoriesIntent read latest show hn {Count} headlines
-ReadShowStoriesIntent read latest show hn {Count} news
-ReadShowStoriesIntent read latest show hn stories
-ReadShowStoriesIntent read latest show hn headlines
-ReadShowStoriesIntent read latest show hn news
+ReadShowStoriesIntent read latest show h.n. {Count} stories
+ReadShowStoriesIntent read latest show h.n. {Count} headlines
+ReadShowStoriesIntent read latest show h.n. {Count} news
+ReadShowStoriesIntent read latest show h.n. stories
+ReadShowStoriesIntent read latest show h.n. headlines
+ReadShowStoriesIntent read latest show h.n. news
 ReadShowStoriesIntent read latest show hacker news {Count} stories
 ReadShowStoriesIntent read latest show hacker news {Count} headlines
 ReadShowStoriesIntent read latest show hacker news {Count} news
@@ -518,12 +524,12 @@ ReadShowStoriesIntent read show {Count} news
 ReadShowStoriesIntent read show stories
 ReadShowStoriesIntent read show headlines
 ReadShowStoriesIntent read show news
-ReadShowStoriesIntent read show hn {Count} stories
-ReadShowStoriesIntent read show hn {Count} headlines
-ReadShowStoriesIntent read show hn {Count} news
-ReadShowStoriesIntent read show hn stories
-ReadShowStoriesIntent read show hn headlines
-ReadShowStoriesIntent read show hn news
+ReadShowStoriesIntent read show h.n. {Count} stories
+ReadShowStoriesIntent read show h.n. {Count} headlines
+ReadShowStoriesIntent read show h.n. {Count} news
+ReadShowStoriesIntent read show h.n. stories
+ReadShowStoriesIntent read show h.n. headlines
+ReadShowStoriesIntent read show h.n. news
 ReadShowStoriesIntent read show hacker news {Count} stories
 ReadShowStoriesIntent read show hacker news {Count} headlines
 ReadShowStoriesIntent read show hacker news {Count} news
@@ -542,12 +548,12 @@ ReadShowStoriesIntent tell me latest show {Count} news
 ReadShowStoriesIntent tell me latest show stories
 ReadShowStoriesIntent tell me latest show headlines
 ReadShowStoriesIntent tell me latest show news
-ReadShowStoriesIntent tell me latest show hn {Count} stories
-ReadShowStoriesIntent tell me latest show hn {Count} headlines
-ReadShowStoriesIntent tell me latest show hn {Count} news
-ReadShowStoriesIntent tell me latest show hn stories
-ReadShowStoriesIntent tell me latest show hn headlines
-ReadShowStoriesIntent tell me latest show hn news
+ReadShowStoriesIntent tell me latest show h.n. {Count} stories
+ReadShowStoriesIntent tell me latest show h.n. {Count} headlines
+ReadShowStoriesIntent tell me latest show h.n. {Count} news
+ReadShowStoriesIntent tell me latest show h.n. stories
+ReadShowStoriesIntent tell me latest show h.n. headlines
+ReadShowStoriesIntent tell me latest show h.n. news
 ReadShowStoriesIntent tell me latest show hacker news {Count} stories
 ReadShowStoriesIntent tell me latest show hacker news {Count} headlines
 ReadShowStoriesIntent tell me latest show hacker news {Count} news
@@ -566,12 +572,12 @@ ReadShowStoriesIntent tell me show {Count} news
 ReadShowStoriesIntent tell me show stories
 ReadShowStoriesIntent tell me show headlines
 ReadShowStoriesIntent tell me show news
-ReadShowStoriesIntent tell me show hn {Count} stories
-ReadShowStoriesIntent tell me show hn {Count} headlines
-ReadShowStoriesIntent tell me show hn {Count} news
-ReadShowStoriesIntent tell me show hn stories
-ReadShowStoriesIntent tell me show hn headlines
-ReadShowStoriesIntent tell me show hn news
+ReadShowStoriesIntent tell me show h.n. {Count} stories
+ReadShowStoriesIntent tell me show h.n. {Count} headlines
+ReadShowStoriesIntent tell me show h.n. {Count} news
+ReadShowStoriesIntent tell me show h.n. stories
+ReadShowStoriesIntent tell me show h.n. headlines
+ReadShowStoriesIntent tell me show h.n. news
 ReadShowStoriesIntent tell me show hacker news {Count} stories
 ReadShowStoriesIntent tell me show hacker news {Count} headlines
 ReadShowStoriesIntent tell me show hacker news {Count} news
@@ -590,12 +596,12 @@ ReadShowStoriesIntent what's latest show {Count} news
 ReadShowStoriesIntent what's latest show stories
 ReadShowStoriesIntent what's latest show headlines
 ReadShowStoriesIntent what's latest show news
-ReadShowStoriesIntent what's latest show hn {Count} stories
-ReadShowStoriesIntent what's latest show hn {Count} headlines
-ReadShowStoriesIntent what's latest show hn {Count} news
-ReadShowStoriesIntent what's latest show hn stories
-ReadShowStoriesIntent what's latest show hn headlines
-ReadShowStoriesIntent what's latest show hn news
+ReadShowStoriesIntent what's latest show h.n. {Count} stories
+ReadShowStoriesIntent what's latest show h.n. {Count} headlines
+ReadShowStoriesIntent what's latest show h.n. {Count} news
+ReadShowStoriesIntent what's latest show h.n. stories
+ReadShowStoriesIntent what's latest show h.n. headlines
+ReadShowStoriesIntent what's latest show h.n. news
 ReadShowStoriesIntent what's latest show hacker news {Count} stories
 ReadShowStoriesIntent what's latest show hacker news {Count} headlines
 ReadShowStoriesIntent what's latest show hacker news {Count} news
@@ -614,12 +620,12 @@ ReadShowStoriesIntent what's show {Count} news
 ReadShowStoriesIntent what's show stories
 ReadShowStoriesIntent what's show headlines
 ReadShowStoriesIntent what's show news
-ReadShowStoriesIntent what's show hn {Count} stories
-ReadShowStoriesIntent what's show hn {Count} headlines
-ReadShowStoriesIntent what's show hn {Count} news
-ReadShowStoriesIntent what's show hn stories
-ReadShowStoriesIntent what's show hn headlines
-ReadShowStoriesIntent what's show hn news
+ReadShowStoriesIntent what's show h.n. {Count} stories
+ReadShowStoriesIntent what's show h.n. {Count} headlines
+ReadShowStoriesIntent what's show h.n. {Count} news
+ReadShowStoriesIntent what's show h.n. stories
+ReadShowStoriesIntent what's show h.n. headlines
+ReadShowStoriesIntent what's show h.n. news
 ReadShowStoriesIntent what's show hacker news {Count} stories
 ReadShowStoriesIntent what's show hacker news {Count} headlines
 ReadShowStoriesIntent what's show hacker news {Count} news
@@ -638,12 +644,12 @@ ReadShowStoriesIntent what are latest show {Count} news
 ReadShowStoriesIntent what are latest show stories
 ReadShowStoriesIntent what are latest show headlines
 ReadShowStoriesIntent what are latest show news
-ReadShowStoriesIntent what are latest show hn {Count} stories
-ReadShowStoriesIntent what are latest show hn {Count} headlines
-ReadShowStoriesIntent what are latest show hn {Count} news
-ReadShowStoriesIntent what are latest show hn stories
-ReadShowStoriesIntent what are latest show hn headlines
-ReadShowStoriesIntent what are latest show hn news
+ReadShowStoriesIntent what are latest show h.n. {Count} stories
+ReadShowStoriesIntent what are latest show h.n. {Count} headlines
+ReadShowStoriesIntent what are latest show h.n. {Count} news
+ReadShowStoriesIntent what are latest show h.n. stories
+ReadShowStoriesIntent what are latest show h.n. headlines
+ReadShowStoriesIntent what are latest show h.n. news
 ReadShowStoriesIntent what are latest show hacker news {Count} stories
 ReadShowStoriesIntent what are latest show hacker news {Count} headlines
 ReadShowStoriesIntent what are latest show hacker news {Count} news
@@ -662,12 +668,12 @@ ReadShowStoriesIntent what are show {Count} news
 ReadShowStoriesIntent what are show stories
 ReadShowStoriesIntent what are show headlines
 ReadShowStoriesIntent what are show news
-ReadShowStoriesIntent what are show hn {Count} stories
-ReadShowStoriesIntent what are show hn {Count} headlines
-ReadShowStoriesIntent what are show hn {Count} news
-ReadShowStoriesIntent what are show hn stories
-ReadShowStoriesIntent what are show hn headlines
-ReadShowStoriesIntent what are show hn news
+ReadShowStoriesIntent what are show h.n. {Count} stories
+ReadShowStoriesIntent what are show h.n. {Count} headlines
+ReadShowStoriesIntent what are show h.n. {Count} news
+ReadShowStoriesIntent what are show h.n. stories
+ReadShowStoriesIntent what are show h.n. headlines
+ReadShowStoriesIntent what are show h.n. news
 ReadShowStoriesIntent what are show hacker news {Count} stories
 ReadShowStoriesIntent what are show hacker news {Count} headlines
 ReadShowStoriesIntent what are show hacker news {Count} news
@@ -686,12 +692,12 @@ ReadShowStoriesIntent get latest show {Count} news
 ReadShowStoriesIntent get latest show stories
 ReadShowStoriesIntent get latest show headlines
 ReadShowStoriesIntent get latest show news
-ReadShowStoriesIntent get latest show hn {Count} stories
-ReadShowStoriesIntent get latest show hn {Count} headlines
-ReadShowStoriesIntent get latest show hn {Count} news
-ReadShowStoriesIntent get latest show hn stories
-ReadShowStoriesIntent get latest show hn headlines
-ReadShowStoriesIntent get latest show hn news
+ReadShowStoriesIntent get latest show h.n. {Count} stories
+ReadShowStoriesIntent get latest show h.n. {Count} headlines
+ReadShowStoriesIntent get latest show h.n. {Count} news
+ReadShowStoriesIntent get latest show h.n. stories
+ReadShowStoriesIntent get latest show h.n. headlines
+ReadShowStoriesIntent get latest show h.n. news
 ReadShowStoriesIntent get latest show hacker news {Count} stories
 ReadShowStoriesIntent get latest show hacker news {Count} headlines
 ReadShowStoriesIntent get latest show hacker news {Count} news
@@ -710,12 +716,12 @@ ReadShowStoriesIntent get show {Count} news
 ReadShowStoriesIntent get show stories
 ReadShowStoriesIntent get show headlines
 ReadShowStoriesIntent get show news
-ReadShowStoriesIntent get show hn {Count} stories
-ReadShowStoriesIntent get show hn {Count} headlines
-ReadShowStoriesIntent get show hn {Count} news
-ReadShowStoriesIntent get show hn stories
-ReadShowStoriesIntent get show hn headlines
-ReadShowStoriesIntent get show hn news
+ReadShowStoriesIntent get show h.n. {Count} stories
+ReadShowStoriesIntent get show h.n. {Count} headlines
+ReadShowStoriesIntent get show h.n. {Count} news
+ReadShowStoriesIntent get show h.n. stories
+ReadShowStoriesIntent get show h.n. headlines
+ReadShowStoriesIntent get show h.n. news
 ReadShowStoriesIntent get show hacker news {Count} stories
 ReadShowStoriesIntent get show hacker news {Count} headlines
 ReadShowStoriesIntent get show hacker news {Count} news
@@ -734,12 +740,12 @@ ReadShowStoriesIntent fetch latest show {Count} news
 ReadShowStoriesIntent fetch latest show stories
 ReadShowStoriesIntent fetch latest show headlines
 ReadShowStoriesIntent fetch latest show news
-ReadShowStoriesIntent fetch latest show hn {Count} stories
-ReadShowStoriesIntent fetch latest show hn {Count} headlines
-ReadShowStoriesIntent fetch latest show hn {Count} news
-ReadShowStoriesIntent fetch latest show hn stories
-ReadShowStoriesIntent fetch latest show hn headlines
-ReadShowStoriesIntent fetch latest show hn news
+ReadShowStoriesIntent fetch latest show h.n. {Count} stories
+ReadShowStoriesIntent fetch latest show h.n. {Count} headlines
+ReadShowStoriesIntent fetch latest show h.n. {Count} news
+ReadShowStoriesIntent fetch latest show h.n. stories
+ReadShowStoriesIntent fetch latest show h.n. headlines
+ReadShowStoriesIntent fetch latest show h.n. news
 ReadShowStoriesIntent fetch latest show hacker news {Count} stories
 ReadShowStoriesIntent fetch latest show hacker news {Count} headlines
 ReadShowStoriesIntent fetch latest show hacker news {Count} news
@@ -758,12 +764,12 @@ ReadShowStoriesIntent fetch show {Count} news
 ReadShowStoriesIntent fetch show stories
 ReadShowStoriesIntent fetch show headlines
 ReadShowStoriesIntent fetch show news
-ReadShowStoriesIntent fetch show hn {Count} stories
-ReadShowStoriesIntent fetch show hn {Count} headlines
-ReadShowStoriesIntent fetch show hn {Count} news
-ReadShowStoriesIntent fetch show hn stories
-ReadShowStoriesIntent fetch show hn headlines
-ReadShowStoriesIntent fetch show hn news
+ReadShowStoriesIntent fetch show h.n. {Count} stories
+ReadShowStoriesIntent fetch show h.n. {Count} headlines
+ReadShowStoriesIntent fetch show h.n. {Count} news
+ReadShowStoriesIntent fetch show h.n. stories
+ReadShowStoriesIntent fetch show h.n. headlines
+ReadShowStoriesIntent fetch show h.n. news
 ReadShowStoriesIntent fetch show hacker news {Count} stories
 ReadShowStoriesIntent fetch show hacker news {Count} headlines
 ReadShowStoriesIntent fetch show hacker news {Count} news
@@ -783,12 +789,12 @@ ReadAskStoriesIntent read latest ask {Count} news
 ReadAskStoriesIntent read latest ask stories
 ReadAskStoriesIntent read latest ask headlines
 ReadAskStoriesIntent read latest ask news
-ReadAskStoriesIntent read latest ask hn {Count} stories
-ReadAskStoriesIntent read latest ask hn {Count} headlines
-ReadAskStoriesIntent read latest ask hn {Count} news
-ReadAskStoriesIntent read latest ask hn stories
-ReadAskStoriesIntent read latest ask hn headlines
-ReadAskStoriesIntent read latest ask hn news
+ReadAskStoriesIntent read latest ask h.n. {Count} stories
+ReadAskStoriesIntent read latest ask h.n. {Count} headlines
+ReadAskStoriesIntent read latest ask h.n. {Count} news
+ReadAskStoriesIntent read latest ask h.n. stories
+ReadAskStoriesIntent read latest ask h.n. headlines
+ReadAskStoriesIntent read latest ask h.n. news
 ReadAskStoriesIntent read latest ask hacker news {Count} stories
 ReadAskStoriesIntent read latest ask hacker news {Count} headlines
 ReadAskStoriesIntent read latest ask hacker news {Count} news
@@ -813,12 +819,12 @@ ReadAskStoriesIntent read ask {Count} news
 ReadAskStoriesIntent read ask stories
 ReadAskStoriesIntent read ask headlines
 ReadAskStoriesIntent read ask news
-ReadAskStoriesIntent read ask hn {Count} stories
-ReadAskStoriesIntent read ask hn {Count} headlines
-ReadAskStoriesIntent read ask hn {Count} news
-ReadAskStoriesIntent read ask hn stories
-ReadAskStoriesIntent read ask hn headlines
-ReadAskStoriesIntent read ask hn news
+ReadAskStoriesIntent read ask h.n. {Count} stories
+ReadAskStoriesIntent read ask h.n. {Count} headlines
+ReadAskStoriesIntent read ask h.n. {Count} news
+ReadAskStoriesIntent read ask h.n. stories
+ReadAskStoriesIntent read ask h.n. headlines
+ReadAskStoriesIntent read ask h.n. news
 ReadAskStoriesIntent read ask hacker news {Count} stories
 ReadAskStoriesIntent read ask hacker news {Count} headlines
 ReadAskStoriesIntent read ask hacker news {Count} news
@@ -843,12 +849,12 @@ ReadAskStoriesIntent tell latest ask {Count} news
 ReadAskStoriesIntent tell latest ask stories
 ReadAskStoriesIntent tell latest ask headlines
 ReadAskStoriesIntent tell latest ask news
-ReadAskStoriesIntent tell latest ask hn {Count} stories
-ReadAskStoriesIntent tell latest ask hn {Count} headlines
-ReadAskStoriesIntent tell latest ask hn {Count} news
-ReadAskStoriesIntent tell latest ask hn stories
-ReadAskStoriesIntent tell latest ask hn headlines
-ReadAskStoriesIntent tell latest ask hn news
+ReadAskStoriesIntent tell latest ask h.n. {Count} stories
+ReadAskStoriesIntent tell latest ask h.n. {Count} headlines
+ReadAskStoriesIntent tell latest ask h.n. {Count} news
+ReadAskStoriesIntent tell latest ask h.n. stories
+ReadAskStoriesIntent tell latest ask h.n. headlines
+ReadAskStoriesIntent tell latest ask h.n. news
 ReadAskStoriesIntent tell latest ask hacker news {Count} stories
 ReadAskStoriesIntent tell latest ask hacker news {Count} headlines
 ReadAskStoriesIntent tell latest ask hacker news {Count} news
@@ -873,12 +879,12 @@ ReadAskStoriesIntent tell ask {Count} news
 ReadAskStoriesIntent tell ask stories
 ReadAskStoriesIntent tell ask headlines
 ReadAskStoriesIntent tell ask news
-ReadAskStoriesIntent tell ask hn {Count} stories
-ReadAskStoriesIntent tell ask hn {Count} headlines
-ReadAskStoriesIntent tell ask hn {Count} news
-ReadAskStoriesIntent tell ask hn stories
-ReadAskStoriesIntent tell ask hn headlines
-ReadAskStoriesIntent tell ask hn news
+ReadAskStoriesIntent tell ask h.n. {Count} stories
+ReadAskStoriesIntent tell ask h.n. {Count} headlines
+ReadAskStoriesIntent tell ask h.n. {Count} news
+ReadAskStoriesIntent tell ask h.n. stories
+ReadAskStoriesIntent tell ask h.n. headlines
+ReadAskStoriesIntent tell ask h.n. news
 ReadAskStoriesIntent tell ask hacker news {Count} stories
 ReadAskStoriesIntent tell ask hacker news {Count} headlines
 ReadAskStoriesIntent tell ask hacker news {Count} news
@@ -903,12 +909,12 @@ ReadAskStoriesIntent what's latest ask {Count} news
 ReadAskStoriesIntent what's latest ask stories
 ReadAskStoriesIntent what's latest ask headlines
 ReadAskStoriesIntent what's latest ask news
-ReadAskStoriesIntent what's latest ask hn {Count} stories
-ReadAskStoriesIntent what's latest ask hn {Count} headlines
-ReadAskStoriesIntent what's latest ask hn {Count} news
-ReadAskStoriesIntent what's latest ask hn stories
-ReadAskStoriesIntent what's latest ask hn headlines
-ReadAskStoriesIntent what's latest ask hn news
+ReadAskStoriesIntent what's latest ask h.n. {Count} stories
+ReadAskStoriesIntent what's latest ask h.n. {Count} headlines
+ReadAskStoriesIntent what's latest ask h.n. {Count} news
+ReadAskStoriesIntent what's latest ask h.n. stories
+ReadAskStoriesIntent what's latest ask h.n. headlines
+ReadAskStoriesIntent what's latest ask h.n. news
 ReadAskStoriesIntent what's latest ask hacker news {Count} stories
 ReadAskStoriesIntent what's latest ask hacker news {Count} headlines
 ReadAskStoriesIntent what's latest ask hacker news {Count} news
@@ -933,12 +939,12 @@ ReadAskStoriesIntent what's ask {Count} news
 ReadAskStoriesIntent what's ask stories
 ReadAskStoriesIntent what's ask headlines
 ReadAskStoriesIntent what's ask news
-ReadAskStoriesIntent what's ask hn {Count} stories
-ReadAskStoriesIntent what's ask hn {Count} headlines
-ReadAskStoriesIntent what's ask hn {Count} news
-ReadAskStoriesIntent what's ask hn stories
-ReadAskStoriesIntent what's ask hn headlines
-ReadAskStoriesIntent what's ask hn news
+ReadAskStoriesIntent what's ask h.n. {Count} stories
+ReadAskStoriesIntent what's ask h.n. {Count} headlines
+ReadAskStoriesIntent what's ask h.n. {Count} news
+ReadAskStoriesIntent what's ask h.n. stories
+ReadAskStoriesIntent what's ask h.n. headlines
+ReadAskStoriesIntent what's ask h.n. news
 ReadAskStoriesIntent what's ask hacker news {Count} stories
 ReadAskStoriesIntent what's ask hacker news {Count} headlines
 ReadAskStoriesIntent what's ask hacker news {Count} news
@@ -963,12 +969,12 @@ ReadAskStoriesIntent what are latest ask {Count} news
 ReadAskStoriesIntent what are latest ask stories
 ReadAskStoriesIntent what are latest ask headlines
 ReadAskStoriesIntent what are latest ask news
-ReadAskStoriesIntent what are latest ask hn {Count} stories
-ReadAskStoriesIntent what are latest ask hn {Count} headlines
-ReadAskStoriesIntent what are latest ask hn {Count} news
-ReadAskStoriesIntent what are latest ask hn stories
-ReadAskStoriesIntent what are latest ask hn headlines
-ReadAskStoriesIntent what are latest ask hn news
+ReadAskStoriesIntent what are latest ask h.n. {Count} stories
+ReadAskStoriesIntent what are latest ask h.n. {Count} headlines
+ReadAskStoriesIntent what are latest ask h.n. {Count} news
+ReadAskStoriesIntent what are latest ask h.n. stories
+ReadAskStoriesIntent what are latest ask h.n. headlines
+ReadAskStoriesIntent what are latest ask h.n. news
 ReadAskStoriesIntent what are latest ask hacker news {Count} stories
 ReadAskStoriesIntent what are latest ask hacker news {Count} headlines
 ReadAskStoriesIntent what are latest ask hacker news {Count} news
@@ -993,12 +999,12 @@ ReadAskStoriesIntent what are ask {Count} news
 ReadAskStoriesIntent what are ask stories
 ReadAskStoriesIntent what are ask headlines
 ReadAskStoriesIntent what are ask news
-ReadAskStoriesIntent what are ask hn {Count} stories
-ReadAskStoriesIntent what are ask hn {Count} headlines
-ReadAskStoriesIntent what are ask hn {Count} news
-ReadAskStoriesIntent what are ask hn stories
-ReadAskStoriesIntent what are ask hn headlines
-ReadAskStoriesIntent what are ask hn news
+ReadAskStoriesIntent what are ask h.n. {Count} stories
+ReadAskStoriesIntent what are ask h.n. {Count} headlines
+ReadAskStoriesIntent what are ask h.n. {Count} news
+ReadAskStoriesIntent what are ask h.n. stories
+ReadAskStoriesIntent what are ask h.n. headlines
+ReadAskStoriesIntent what are ask h.n. news
 ReadAskStoriesIntent what are ask hacker news {Count} stories
 ReadAskStoriesIntent what are ask hacker news {Count} headlines
 ReadAskStoriesIntent what are ask hacker news {Count} news
@@ -1023,12 +1029,12 @@ ReadAskStoriesIntent get latest ask {Count} news
 ReadAskStoriesIntent get latest ask stories
 ReadAskStoriesIntent get latest ask headlines
 ReadAskStoriesIntent get latest ask news
-ReadAskStoriesIntent get latest ask hn {Count} stories
-ReadAskStoriesIntent get latest ask hn {Count} headlines
-ReadAskStoriesIntent get latest ask hn {Count} news
-ReadAskStoriesIntent get latest ask hn stories
-ReadAskStoriesIntent get latest ask hn headlines
-ReadAskStoriesIntent get latest ask hn news
+ReadAskStoriesIntent get latest ask h.n. {Count} stories
+ReadAskStoriesIntent get latest ask h.n. {Count} headlines
+ReadAskStoriesIntent get latest ask h.n. {Count} news
+ReadAskStoriesIntent get latest ask h.n. stories
+ReadAskStoriesIntent get latest ask h.n. headlines
+ReadAskStoriesIntent get latest ask h.n. news
 ReadAskStoriesIntent get latest ask hacker news {Count} stories
 ReadAskStoriesIntent get latest ask hacker news {Count} headlines
 ReadAskStoriesIntent get latest ask hacker news {Count} news
@@ -1053,12 +1059,12 @@ ReadAskStoriesIntent get ask {Count} news
 ReadAskStoriesIntent get ask stories
 ReadAskStoriesIntent get ask headlines
 ReadAskStoriesIntent get ask news
-ReadAskStoriesIntent get ask hn {Count} stories
-ReadAskStoriesIntent get ask hn {Count} headlines
-ReadAskStoriesIntent get ask hn {Count} news
-ReadAskStoriesIntent get ask hn stories
-ReadAskStoriesIntent get ask hn headlines
-ReadAskStoriesIntent get ask hn news
+ReadAskStoriesIntent get ask h.n. {Count} stories
+ReadAskStoriesIntent get ask h.n. {Count} headlines
+ReadAskStoriesIntent get ask h.n. {Count} news
+ReadAskStoriesIntent get ask h.n. stories
+ReadAskStoriesIntent get ask h.n. headlines
+ReadAskStoriesIntent get ask h.n. news
 ReadAskStoriesIntent get ask hacker news {Count} stories
 ReadAskStoriesIntent get ask hacker news {Count} headlines
 ReadAskStoriesIntent get ask hacker news {Count} news
@@ -1083,12 +1089,12 @@ ReadAskStoriesIntent fetch latest ask {Count} news
 ReadAskStoriesIntent fetch latest ask stories
 ReadAskStoriesIntent fetch latest ask headlines
 ReadAskStoriesIntent fetch latest ask news
-ReadAskStoriesIntent fetch latest ask hn {Count} stories
-ReadAskStoriesIntent fetch latest ask hn {Count} headlines
-ReadAskStoriesIntent fetch latest ask hn {Count} news
-ReadAskStoriesIntent fetch latest ask hn stories
-ReadAskStoriesIntent fetch latest ask hn headlines
-ReadAskStoriesIntent fetch latest ask hn news
+ReadAskStoriesIntent fetch latest ask h.n. {Count} stories
+ReadAskStoriesIntent fetch latest ask h.n. {Count} headlines
+ReadAskStoriesIntent fetch latest ask h.n. {Count} news
+ReadAskStoriesIntent fetch latest ask h.n. stories
+ReadAskStoriesIntent fetch latest ask h.n. headlines
+ReadAskStoriesIntent fetch latest ask h.n. news
 ReadAskStoriesIntent fetch latest ask hacker news {Count} stories
 ReadAskStoriesIntent fetch latest ask hacker news {Count} headlines
 ReadAskStoriesIntent fetch latest ask hacker news {Count} news
@@ -1113,12 +1119,12 @@ ReadAskStoriesIntent fetch ask {Count} news
 ReadAskStoriesIntent fetch ask stories
 ReadAskStoriesIntent fetch ask headlines
 ReadAskStoriesIntent fetch ask news
-ReadAskStoriesIntent fetch ask hn {Count} stories
-ReadAskStoriesIntent fetch ask hn {Count} headlines
-ReadAskStoriesIntent fetch ask hn {Count} news
-ReadAskStoriesIntent fetch ask hn stories
-ReadAskStoriesIntent fetch ask hn headlines
-ReadAskStoriesIntent fetch ask hn news
+ReadAskStoriesIntent fetch ask h.n. {Count} stories
+ReadAskStoriesIntent fetch ask h.n. {Count} headlines
+ReadAskStoriesIntent fetch ask h.n. {Count} news
+ReadAskStoriesIntent fetch ask h.n. stories
+ReadAskStoriesIntent fetch ask h.n. headlines
+ReadAskStoriesIntent fetch ask h.n. news
 ReadAskStoriesIntent fetch ask hacker news {Count} stories
 ReadAskStoriesIntent fetch ask hacker news {Count} headlines
 ReadAskStoriesIntent fetch ask hacker news {Count} news

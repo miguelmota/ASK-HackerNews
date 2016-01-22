@@ -22,7 +22,7 @@ var intents = {
 };
 
 function HelpIntent(intent, session, response) {
-  var speech = i18n.helpInstructions + ' ' + i18n.seeHelpCard;
+  var speech = i18n.helpInstructions + ' ' + i18n.seeHelpCard + ' ' + i18n.helpPrompt;
   var cardTitle = i18n.help;
   var cardContent = i18n.helpInstructions + ' ' + i18n.helpContact;
 
@@ -106,7 +106,7 @@ function ReadNoobStoriesIntent(intent, session, response) {
 }
 
 function readStories(intent, session, response, options) {
-  var count = (_.get(intent, ['slots', 'Count', 'value'], 30) >> 0);
+  var count = (_.get(intent, ['slots', 'Count', 'value'], 10) >> 0);
   var type = options.type;
   var page = options.page;
 

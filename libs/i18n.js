@@ -1,10 +1,11 @@
 module.exports = {
   help: 'Help',
-  helpInstructions: 'You can ask me for "top", "new", "show", "ask", "job", "best", "active", or "noob" Hacker News stories.',
+  helpInstructions: 'You can ask me for "top stories", "new", "show", "ask", "job", "best", "active", or "noob" Hacker News stories.',
   seeHelpCard: 'See the Help card in the Alexa app for additional information.',
   helpContact: 'For reporting bugs or suggestions, please email m@moogs.io',
+  helpPrompt: 'What stories would you like to hear?',
   exit: 'Ok, till next time.',
-  greeting: 'What Hacker News stories would you like to hear? You can say, "top", "new", "show", "ask", "job", "best", or "active" stories.',
+  greeting: 'What Hacker News stories would you like to hear? You can say, "top stories", "new", "show", "ask", "job", "best", or "active" stories.',
   greetingReprompt: 'Sorry, I didn\'t get that. What Hacker News stories would you like to hear? You can say, "top", "new", "show", "ask", "job", "best", or "active" stories.',
   hearMoreStories: 'Would you like to hear more stories?',
   noStories: 'There were no stories returned.',
