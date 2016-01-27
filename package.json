@@ -12,13 +12,13 @@
     "capitalize": "^1.0.0",
     "cheerio": "^0.19.0",
     "concat-stream": "^1.5.1",
-    "intent-utterance-expander": "0.0.4",
     "lodash": "^3.10.1",
     "pluralize": "^1.2.1",
     "q": "^1.4.1",
     "request": "^2.67.0"
   },
   "devDependencies": {
-    "tape": "^4.4.0"
+    "tape": "^4.4.0",
+    "intent-utterance-expander": "0.0.4"
   }
 }
