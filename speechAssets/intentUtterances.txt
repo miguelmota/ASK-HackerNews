@@ -54,12 +54,20 @@ ReadTopStoriesIntent get top {Count} news
 ReadTopStoriesIntent get top stories
 ReadTopStoriesIntent get top headlines
 ReadTopStoriesIntent get top news
+ReadTopStoriesIntent get me top {Count} stories
+ReadTopStoriesIntent get me top {Count} headlines
+ReadTopStoriesIntent get me top {Count} news
+ReadTopStoriesIntent get me top stories
+ReadTopStoriesIntent get me top headlines
+ReadTopStoriesIntent get me top news
 ReadTopStoriesIntent fetch top {Count} stories
 ReadTopStoriesIntent fetch top {Count} headlines
 ReadTopStoriesIntent fetch top {Count} news
 ReadTopStoriesIntent fetch top stories
 ReadTopStoriesIntent fetch top headlines
 ReadTopStoriesIntent fetch top news
+ReadTopStoriesIntent top stories
+ReadTopStoriesIntent top headlines
 
 ReadNewStoriesIntent read latest latest {Count} stories
 ReadNewStoriesIntent read latest latest {Count} headlines
@@ -421,6 +429,78 @@ ReadNewStoriesIntent get current {Count} news
 ReadNewStoriesIntent get current stories
 ReadNewStoriesIntent get current headlines
 ReadNewStoriesIntent get current news
+ReadNewStoriesIntent get me latest latest {Count} stories
+ReadNewStoriesIntent get me latest latest {Count} headlines
+ReadNewStoriesIntent get me latest latest {Count} news
+ReadNewStoriesIntent get me latest latest stories
+ReadNewStoriesIntent get me latest latest headlines
+ReadNewStoriesIntent get me latest latest news
+ReadNewStoriesIntent get me latest new {Count} stories
+ReadNewStoriesIntent get me latest new {Count} headlines
+ReadNewStoriesIntent get me latest new {Count} news
+ReadNewStoriesIntent get me latest new stories
+ReadNewStoriesIntent get me latest new headlines
+ReadNewStoriesIntent get me latest new news
+ReadNewStoriesIntent get me latest newest {Count} stories
+ReadNewStoriesIntent get me latest newest {Count} headlines
+ReadNewStoriesIntent get me latest newest {Count} news
+ReadNewStoriesIntent get me latest newest stories
+ReadNewStoriesIntent get me latest newest headlines
+ReadNewStoriesIntent get me latest newest news
+ReadNewStoriesIntent get me latest recent {Count} stories
+ReadNewStoriesIntent get me latest recent {Count} headlines
+ReadNewStoriesIntent get me latest recent {Count} news
+ReadNewStoriesIntent get me latest recent stories
+ReadNewStoriesIntent get me latest recent headlines
+ReadNewStoriesIntent get me latest recent news
+ReadNewStoriesIntent get me latest most recent {Count} stories
+ReadNewStoriesIntent get me latest most recent {Count} headlines
+ReadNewStoriesIntent get me latest most recent {Count} news
+ReadNewStoriesIntent get me latest most recent stories
+ReadNewStoriesIntent get me latest most recent headlines
+ReadNewStoriesIntent get me latest most recent news
+ReadNewStoriesIntent get me latest current {Count} stories
+ReadNewStoriesIntent get me latest current {Count} headlines
+ReadNewStoriesIntent get me latest current {Count} news
+ReadNewStoriesIntent get me latest current stories
+ReadNewStoriesIntent get me latest current headlines
+ReadNewStoriesIntent get me latest current news
+ReadNewStoriesIntent get me latest {Count} stories
+ReadNewStoriesIntent get me latest {Count} headlines
+ReadNewStoriesIntent get me latest {Count} news
+ReadNewStoriesIntent get me latest stories
+ReadNewStoriesIntent get me latest headlines
+ReadNewStoriesIntent get me latest news
+ReadNewStoriesIntent get me new {Count} stories
+ReadNewStoriesIntent get me new {Count} headlines
+ReadNewStoriesIntent get me new {Count} news
+ReadNewStoriesIntent get me new stories
+ReadNewStoriesIntent get me new headlines
+ReadNewStoriesIntent get me new news
+ReadNewStoriesIntent get me newest {Count} stories
+ReadNewStoriesIntent get me newest {Count} headlines
+ReadNewStoriesIntent get me newest {Count} news
+ReadNewStoriesIntent get me newest stories
+ReadNewStoriesIntent get me newest headlines
+ReadNewStoriesIntent get me newest news
+ReadNewStoriesIntent get me recent {Count} stories
+ReadNewStoriesIntent get me recent {Count} headlines
+ReadNewStoriesIntent get me recent {Count} news
+ReadNewStoriesIntent get me recent stories
+ReadNewStoriesIntent get me recent headlines
+ReadNewStoriesIntent get me recent news
+ReadNewStoriesIntent get me most recent {Count} stories
+ReadNewStoriesIntent get me most recent {Count} headlines
+ReadNewStoriesIntent get me most recent {Count} news
+ReadNewStoriesIntent get me most recent stories
+ReadNewStoriesIntent get me most recent headlines
+ReadNewStoriesIntent get me most recent news
+ReadNewStoriesIntent get me current {Count} stories
+ReadNewStoriesIntent get me current {Count} headlines
+ReadNewStoriesIntent get me current {Count} news
+ReadNewStoriesIntent get me current stories
+ReadNewStoriesIntent get me current headlines
+ReadNewStoriesIntent get me current news
 ReadNewStoriesIntent fetch latest latest {Count} stories
 ReadNewStoriesIntent fetch latest latest {Count} headlines
 ReadNewStoriesIntent fetch latest latest {Count} news
@@ -493,6 +573,9 @@ ReadNewStoriesIntent fetch current {Count} news
 ReadNewStoriesIntent fetch current stories
 ReadNewStoriesIntent fetch current headlines
 ReadNewStoriesIntent fetch current news
+ReadNewStoriesIntent new stories
+ReadNewStoriesIntent new headlines
+ReadNewStoriesIntent what the latest news is
 
 ReadShowStoriesIntent read latest show {Count} stories
 ReadShowStoriesIntent read latest show {Count} headlines
@@ -674,6 +757,42 @@ ReadShowStoriesIntent get show and tell {Count} news
 ReadShowStoriesIntent get show and tell stories
 ReadShowStoriesIntent get show and tell headlines
 ReadShowStoriesIntent get show and tell news
+ReadShowStoriesIntent get me latest show {Count} stories
+ReadShowStoriesIntent get me latest show {Count} headlines
+ReadShowStoriesIntent get me latest show {Count} news
+ReadShowStoriesIntent get me latest show stories
+ReadShowStoriesIntent get me latest show headlines
+ReadShowStoriesIntent get me latest show news
+ReadShowStoriesIntent get me latest show hacker news {Count} stories
+ReadShowStoriesIntent get me latest show hacker news {Count} headlines
+ReadShowStoriesIntent get me latest show hacker news {Count} news
+ReadShowStoriesIntent get me latest show hacker news stories
+ReadShowStoriesIntent get me latest show hacker news headlines
+ReadShowStoriesIntent get me latest show hacker news news
+ReadShowStoriesIntent get me latest show and tell {Count} stories
+ReadShowStoriesIntent get me latest show and tell {Count} headlines
+ReadShowStoriesIntent get me latest show and tell {Count} news
+ReadShowStoriesIntent get me latest show and tell stories
+ReadShowStoriesIntent get me latest show and tell headlines
+ReadShowStoriesIntent get me latest show and tell news
+ReadShowStoriesIntent get me show {Count} stories
+ReadShowStoriesIntent get me show {Count} headlines
+ReadShowStoriesIntent get me show {Count} news
+ReadShowStoriesIntent get me show stories
+ReadShowStoriesIntent get me show headlines
+ReadShowStoriesIntent get me show news
+ReadShowStoriesIntent get me show hacker news {Count} stories
+ReadShowStoriesIntent get me show hacker news {Count} headlines
+ReadShowStoriesIntent get me show hacker news {Count} news
+ReadShowStoriesIntent get me show hacker news stories
+ReadShowStoriesIntent get me show hacker news headlines
+ReadShowStoriesIntent get me show hacker news news
+ReadShowStoriesIntent get me show and tell {Count} stories
+ReadShowStoriesIntent get me show and tell {Count} headlines
+ReadShowStoriesIntent get me show and tell {Count} news
+ReadShowStoriesIntent get me show and tell stories
+ReadShowStoriesIntent get me show and tell headlines
+ReadShowStoriesIntent get me show and tell news
 ReadShowStoriesIntent fetch latest show {Count} stories
 ReadShowStoriesIntent fetch latest show {Count} headlines
 ReadShowStoriesIntent fetch latest show {Count} news
@@ -710,6 +829,8 @@ ReadShowStoriesIntent fetch show and tell {Count} news
 ReadShowStoriesIntent fetch show and tell stories
 ReadShowStoriesIntent fetch show and tell headlines
 ReadShowStoriesIntent fetch show and tell news
+ReadShowStoriesIntent show stories
+ReadShowStoriesIntent show headlines
 
 ReadAskStoriesIntent read latest ask {Count} stories
 ReadAskStoriesIntent read latest ask {Count} headlines
@@ -951,6 +1072,54 @@ ReadAskStoriesIntent get answer {Count} news
 ReadAskStoriesIntent get answer stories
 ReadAskStoriesIntent get answer headlines
 ReadAskStoriesIntent get answer news
+ReadAskStoriesIntent get me latest ask {Count} stories
+ReadAskStoriesIntent get me latest ask {Count} headlines
+ReadAskStoriesIntent get me latest ask {Count} news
+ReadAskStoriesIntent get me latest ask stories
+ReadAskStoriesIntent get me latest ask headlines
+ReadAskStoriesIntent get me latest ask news
+ReadAskStoriesIntent get me latest ask hacker news {Count} stories
+ReadAskStoriesIntent get me latest ask hacker news {Count} headlines
+ReadAskStoriesIntent get me latest ask hacker news {Count} news
+ReadAskStoriesIntent get me latest ask hacker news stories
+ReadAskStoriesIntent get me latest ask hacker news headlines
+ReadAskStoriesIntent get me latest ask hacker news news
+ReadAskStoriesIntent get me latest questions {Count} stories
+ReadAskStoriesIntent get me latest questions {Count} headlines
+ReadAskStoriesIntent get me latest questions {Count} news
+ReadAskStoriesIntent get me latest questions stories
+ReadAskStoriesIntent get me latest questions headlines
+ReadAskStoriesIntent get me latest questions news
+ReadAskStoriesIntent get me latest answer {Count} stories
+ReadAskStoriesIntent get me latest answer {Count} headlines
+ReadAskStoriesIntent get me latest answer {Count} news
+ReadAskStoriesIntent get me latest answer stories
+ReadAskStoriesIntent get me latest answer headlines
+ReadAskStoriesIntent get me latest answer news
+ReadAskStoriesIntent get me ask {Count} stories
+ReadAskStoriesIntent get me ask {Count} headlines
+ReadAskStoriesIntent get me ask {Count} news
+ReadAskStoriesIntent get me ask stories
+ReadAskStoriesIntent get me ask headlines
+ReadAskStoriesIntent get me ask news
+ReadAskStoriesIntent get me ask hacker news {Count} stories
+ReadAskStoriesIntent get me ask hacker news {Count} headlines
+ReadAskStoriesIntent get me ask hacker news {Count} news
+ReadAskStoriesIntent get me ask hacker news stories
+ReadAskStoriesIntent get me ask hacker news headlines
+ReadAskStoriesIntent get me ask hacker news news
+ReadAskStoriesIntent get me questions {Count} stories
+ReadAskStoriesIntent get me questions {Count} headlines
+ReadAskStoriesIntent get me questions {Count} news
+ReadAskStoriesIntent get me questions stories
+ReadAskStoriesIntent get me questions headlines
+ReadAskStoriesIntent get me questions news
+ReadAskStoriesIntent get me answer {Count} stories
+ReadAskStoriesIntent get me answer {Count} headlines
+ReadAskStoriesIntent get me answer {Count} news
+ReadAskStoriesIntent get me answer stories
+ReadAskStoriesIntent get me answer headlines
+ReadAskStoriesIntent get me answer news
 ReadAskStoriesIntent fetch latest ask {Count} stories
 ReadAskStoriesIntent fetch latest ask {Count} headlines
 ReadAskStoriesIntent fetch latest ask {Count} news
@@ -999,6 +1168,8 @@ ReadAskStoriesIntent fetch answer {Count} news
 ReadAskStoriesIntent fetch answer stories
 ReadAskStoriesIntent fetch answer headlines
 ReadAskStoriesIntent fetch answer news
+ReadAskStoriesIntent ask stories
+ReadAskStoriesIntent ask headlines
 
 ReadJobStoriesIntent read latest job {Count} stories
 ReadJobStoriesIntent read latest job {Count} headlines
@@ -1300,6 +1471,66 @@ ReadJobStoriesIntent get work {Count} news
 ReadJobStoriesIntent get work stories
 ReadJobStoriesIntent get work headlines
 ReadJobStoriesIntent get work news
+ReadJobStoriesIntent get me latest job {Count} stories
+ReadJobStoriesIntent get me latest job {Count} headlines
+ReadJobStoriesIntent get me latest job {Count} news
+ReadJobStoriesIntent get me latest job stories
+ReadJobStoriesIntent get me latest job headlines
+ReadJobStoriesIntent get me latest job news
+ReadJobStoriesIntent get me latest jobs {Count} stories
+ReadJobStoriesIntent get me latest jobs {Count} headlines
+ReadJobStoriesIntent get me latest jobs {Count} news
+ReadJobStoriesIntent get me latest jobs stories
+ReadJobStoriesIntent get me latest jobs headlines
+ReadJobStoriesIntent get me latest jobs news
+ReadJobStoriesIntent get me latest career {Count} stories
+ReadJobStoriesIntent get me latest career {Count} headlines
+ReadJobStoriesIntent get me latest career {Count} news
+ReadJobStoriesIntent get me latest career stories
+ReadJobStoriesIntent get me latest career headlines
+ReadJobStoriesIntent get me latest career news
+ReadJobStoriesIntent get me latest careers {Count} stories
+ReadJobStoriesIntent get me latest careers {Count} headlines
+ReadJobStoriesIntent get me latest careers {Count} news
+ReadJobStoriesIntent get me latest careers stories
+ReadJobStoriesIntent get me latest careers headlines
+ReadJobStoriesIntent get me latest careers news
+ReadJobStoriesIntent get me latest work {Count} stories
+ReadJobStoriesIntent get me latest work {Count} headlines
+ReadJobStoriesIntent get me latest work {Count} news
+ReadJobStoriesIntent get me latest work stories
+ReadJobStoriesIntent get me latest work headlines
+ReadJobStoriesIntent get me latest work news
+ReadJobStoriesIntent get me job {Count} stories
+ReadJobStoriesIntent get me job {Count} headlines
+ReadJobStoriesIntent get me job {Count} news
+ReadJobStoriesIntent get me job stories
+ReadJobStoriesIntent get me job headlines
+ReadJobStoriesIntent get me job news
+ReadJobStoriesIntent get me jobs {Count} stories
+ReadJobStoriesIntent get me jobs {Count} headlines
+ReadJobStoriesIntent get me jobs {Count} news
+ReadJobStoriesIntent get me jobs stories
+ReadJobStoriesIntent get me jobs headlines
+ReadJobStoriesIntent get me jobs news
+ReadJobStoriesIntent get me career {Count} stories
+ReadJobStoriesIntent get me career {Count} headlines
+ReadJobStoriesIntent get me career {Count} news
+ReadJobStoriesIntent get me career stories
+ReadJobStoriesIntent get me career headlines
+ReadJobStoriesIntent get me career news
+ReadJobStoriesIntent get me careers {Count} stories
+ReadJobStoriesIntent get me careers {Count} headlines
+ReadJobStoriesIntent get me careers {Count} news
+ReadJobStoriesIntent get me careers stories
+ReadJobStoriesIntent get me careers headlines
+ReadJobStoriesIntent get me careers news
+ReadJobStoriesIntent get me work {Count} stories
+ReadJobStoriesIntent get me work {Count} headlines
+ReadJobStoriesIntent get me work {Count} news
+ReadJobStoriesIntent get me work stories
+ReadJobStoriesIntent get me work headlines
+ReadJobStoriesIntent get me work news
 ReadJobStoriesIntent fetch latest job {Count} stories
 ReadJobStoriesIntent fetch latest job {Count} headlines
 ReadJobStoriesIntent fetch latest job {Count} news
@@ -1360,6 +1591,8 @@ ReadJobStoriesIntent fetch work {Count} news
 ReadJobStoriesIntent fetch work stories
 ReadJobStoriesIntent fetch work headlines
 ReadJobStoriesIntent fetch work news
+ReadJobStoriesIntent job stories
+ReadJobStoriesIntent job headlines
 
 ReadBestStoriesIntent read latest best {Count} stories
 ReadBestStoriesIntent read latest best {Count} headlines
@@ -1481,6 +1714,30 @@ ReadBestStoriesIntent get bestest {Count} news
 ReadBestStoriesIntent get bestest stories
 ReadBestStoriesIntent get bestest headlines
 ReadBestStoriesIntent get bestest news
+ReadBestStoriesIntent get me latest best {Count} stories
+ReadBestStoriesIntent get me latest best {Count} headlines
+ReadBestStoriesIntent get me latest best {Count} news
+ReadBestStoriesIntent get me latest best stories
+ReadBestStoriesIntent get me latest best headlines
+ReadBestStoriesIntent get me latest best news
+ReadBestStoriesIntent get me latest bestest {Count} stories
+ReadBestStoriesIntent get me latest bestest {Count} headlines
+ReadBestStoriesIntent get me latest bestest {Count} news
+ReadBestStoriesIntent get me latest bestest stories
+ReadBestStoriesIntent get me latest bestest headlines
+ReadBestStoriesIntent get me latest bestest news
+ReadBestStoriesIntent get me best {Count} stories
+ReadBestStoriesIntent get me best {Count} headlines
+ReadBestStoriesIntent get me best {Count} news
+ReadBestStoriesIntent get me best stories
+ReadBestStoriesIntent get me best headlines
+ReadBestStoriesIntent get me best news
+ReadBestStoriesIntent get me bestest {Count} stories
+ReadBestStoriesIntent get me bestest {Count} headlines
+ReadBestStoriesIntent get me bestest {Count} news
+ReadBestStoriesIntent get me bestest stories
+ReadBestStoriesIntent get me bestest headlines
+ReadBestStoriesIntent get me bestest news
 ReadBestStoriesIntent fetch latest best {Count} stories
 ReadBestStoriesIntent fetch latest best {Count} headlines
 ReadBestStoriesIntent fetch latest best {Count} news
@@ -1505,6 +1762,8 @@ ReadBestStoriesIntent fetch bestest {Count} news
 ReadBestStoriesIntent fetch bestest stories
 ReadBestStoriesIntent fetch bestest headlines
 ReadBestStoriesIntent fetch bestest news
+ReadBestStoriesIntent best stories
+ReadBestStoriesIntent best headlines
 
 ReadActiveStoriesIntent read latest active {Count} stories
 ReadActiveStoriesIntent read latest active {Count} headlines
@@ -1626,6 +1885,30 @@ ReadActiveStoriesIntent get most active {Count} news
 ReadActiveStoriesIntent get most active stories
 ReadActiveStoriesIntent get most active headlines
 ReadActiveStoriesIntent get most active news
+ReadActiveStoriesIntent get me latest active {Count} stories
+ReadActiveStoriesIntent get me latest active {Count} headlines
+ReadActiveStoriesIntent get me latest active {Count} news
+ReadActiveStoriesIntent get me latest active stories
+ReadActiveStoriesIntent get me latest active headlines
+ReadActiveStoriesIntent get me latest active news
+ReadActiveStoriesIntent get me latest most active {Count} stories
+ReadActiveStoriesIntent get me latest most active {Count} headlines
+ReadActiveStoriesIntent get me latest most active {Count} news
+ReadActiveStoriesIntent get me latest most active stories
+ReadActiveStoriesIntent get me latest most active headlines
+ReadActiveStoriesIntent get me latest most active news
+ReadActiveStoriesIntent get me active {Count} stories
+ReadActiveStoriesIntent get me active {Count} headlines
+ReadActiveStoriesIntent get me active {Count} news
+ReadActiveStoriesIntent get me active stories
+ReadActiveStoriesIntent get me active headlines
+ReadActiveStoriesIntent get me active news
+ReadActiveStoriesIntent get me most active {Count} stories
+ReadActiveStoriesIntent get me most active {Count} headlines
+ReadActiveStoriesIntent get me most active {Count} news
+ReadActiveStoriesIntent get me most active stories
+ReadActiveStoriesIntent get me most active headlines
+ReadActiveStoriesIntent get me most active news
 ReadActiveStoriesIntent fetch latest active {Count} stories
 ReadActiveStoriesIntent fetch latest active {Count} headlines
 ReadActiveStoriesIntent fetch latest active {Count} news
@@ -1650,6 +1933,8 @@ ReadActiveStoriesIntent fetch most active {Count} news
 ReadActiveStoriesIntent fetch most active stories
 ReadActiveStoriesIntent fetch most active headlines
 ReadActiveStoriesIntent fetch most active news
+ReadActiveStoriesIntent active stories
+ReadActiveStoriesIntent active headlines
 
 ReadNoobStoriesIntent read latest noob {Count} stories
 ReadNoobStoriesIntent read latest noob {Count} headlines
@@ -1711,6 +1996,18 @@ ReadNoobStoriesIntent get noob {Count} news
 ReadNoobStoriesIntent get noob stories
 ReadNoobStoriesIntent get noob headlines
 ReadNoobStoriesIntent get noob news
+ReadNoobStoriesIntent get me latest noob {Count} stories
+ReadNoobStoriesIntent get me latest noob {Count} headlines
+ReadNoobStoriesIntent get me latest noob {Count} news
+ReadNoobStoriesIntent get me latest noob stories
+ReadNoobStoriesIntent get me latest noob headlines
+ReadNoobStoriesIntent get me latest noob news
+ReadNoobStoriesIntent get me noob {Count} stories
+ReadNoobStoriesIntent get me noob {Count} headlines
+ReadNoobStoriesIntent get me noob {Count} news
+ReadNoobStoriesIntent get me noob stories
+ReadNoobStoriesIntent get me noob headlines
+ReadNoobStoriesIntent get me noob news
 ReadNoobStoriesIntent fetch latest noob {Count} stories
 ReadNoobStoriesIntent fetch latest noob {Count} headlines
 ReadNoobStoriesIntent fetch latest noob {Count} news
@@ -1723,5 +2020,5 @@ ReadNoobStoriesIntent fetch noob {Count} news
 ReadNoobStoriesIntent fetch noob stories
 ReadNoobStoriesIntent fetch noob headlines
 ReadNoobStoriesIntent fetch noob news
-
-
+ReadNoobStoriesIntent active stories
+ReadNoobStoriesIntent active headlines
