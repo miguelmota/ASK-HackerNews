@@ -117,6 +117,13 @@ var api = {
       var url =  $title.find('a').attr('href');
       var title =  $title.find('a').first().text();
       var domain = $title.find('.sitebit').find('a').text();
+      var index = ($title.find('.rank').text().replace(/[^\d]+/, '') >>> 0);
+
+      if (typeof index !== 'number') {
+        index = 0;
+      } else {
+        index--;
+      }
 
       if (typeof type !== 'string') {
         type = null;
@@ -137,7 +144,8 @@ var api = {
         title: title,
         type: type,
         url: url,
-        domain: domain
+        domain: domain,
+        index: index
       };
 
       stories.push(story);
@@ -211,9 +219,23 @@ var api = {
       typeUrl = apiUrls.topStories;
     }
 
+    var perPage = 30;
+    var requestedPage = options.page;
+    var count = options.count;
+    var limit = count * requestedPage;
+    var callPage = 1;
+    var startSlice = count * (requestedPage - 1);
+
+    if (limit > perPage) {
+      callPage = parseInt(limit / perPage) + 1;
+      startSlice = limit % perPage;
+    }
+
+    var endSlice = startSlice + count;
+
     var fn = function() {
       pendingPromises[pendingPromiseHash] = http.get(typeUrl, {
-        page: options.page
+        page: callPage
       });
 
       pendingPromises[pendingPromiseHash].then(function(page) {
@@ -226,9 +248,9 @@ var api = {
     queue.enqueue(fn);
 
     var handleResponse = function(page) {
-      var stories = this.parsePage(page, options.type);
+      var stories = this.parsePage(page, options.type).sort(this.indexSort);
 
-      deferred.resolve(stories.slice(0, options.count));
+      deferred.resolve(stories.slice(startSlice, endSlice));
     }.bind(this);
 
     var handleFailure = function(error) {
@@ -243,6 +265,16 @@ var api = {
     if (a.score < b.score) {
       return 1;
     } else if (a.score > b.score) {
+      return -1;
+    }
+
+    return 0;
+  },
+
+  indexSort: function(a, b) {
+    if (a.index > b.index) {
+      return 1;
+    } else if (a.index < b.index) {
       return -1;
     }
 
